@@ -12,7 +12,7 @@ Post.init(
       autoIncrement: true,
     },
     postTitle: {
-      type: DataTypes.STRING(30),
+      type: DataTypes.STRING(25),
       allowNull: false,
       unique: true,
     },
@@ -27,10 +27,10 @@ Post.init(
       defaultValue: DataTypes.NOW,
     },
     userId: {
-      type: DataType.INTEGER,
+      type: DataTypes.INTEGER,
       reference: {
-        model: "user",
-        key: "id",
+        model: 'user',
+        key: 'id',
       },
     },
   },
